@@ -16,7 +16,7 @@ Built an API for a social network web application where users can share their th
 
 
 ## My GitHub
-ShaneWilmes
+ShaneWilmes(https://github.com/ShaneWilmes/Social-Network-API)
 
 ## E-mail
 shanewilmes@yahoo.com
