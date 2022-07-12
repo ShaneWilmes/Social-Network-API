@@ -1,5 +1,3 @@
-// similar to courseController in MP
-
 const { User, Thought } = require('../models');
 
 module.exports = {
@@ -11,8 +9,7 @@ module.exports = {
             .catch((err) => res.status(500).json(err));
     },
 
-    // Get a single thought
-
+    // Get a single thought 
     getSingleThought(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
             .select('-__v')
@@ -51,7 +48,7 @@ module.exports = {
         )
           .then((thought) =>
             !thought
-              ? res.status(404).json({ message: 'No user with this id!' })
+              ? res.status(404).json({ message: 'No thought with this id!' })
               : res.json(thought)
           )
           .catch((err) => res.status(500).json(err));
@@ -90,7 +87,7 @@ module.exports = {
     deleteReaction(req, res) {
         Thought.findOneAndDelete(
             { _id: req.params.thoughtId },
-            { $pull: { reactionId: req.params.reactionId } },
+            { $pull: { reactions: { reactionId: req.body.reactionId } } },
             { runValidators: true, new: true }
             )
             .then((thought) =>
