@@ -66,7 +66,7 @@ module.exports = {
     },
 
     // Create a reaction
-    addReaction(req, res) {
+    createReaction(req, res) {
         Thought.findOneAndUpdate(
           { _id: req.params.thoughtId },
           { $addToSet: { reactions: req.body } },
