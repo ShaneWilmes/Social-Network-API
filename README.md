@@ -3,11 +3,13 @@
 
 ## Table of Contents:
 [Description](#Description) 
-[Installation](#Installation)
-[Tests](#Tests)
-[Usage](#Usage)  
 [GitHub](#GitHub)
-[E-mail](#E-mail)
+[E-mail](#Email)
+[Usage](#Usage)
+[Technologies](#Technologies)
+[Installation](#Installation)
+[Screenshot](#Screenshot)
+[Demo](#Demo)
 [Contributing](#Contributing)
 [License](#License)  
 
@@ -15,10 +17,10 @@
 Built an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Technologies used include Express.js for routing, a MongoDB database and the Mongoose ODM.
 
 
-## My GitHub
+## GitHub
 [ShaneWilmes](https://github.com/ShaneWilmes)
 
-## E-mail
+## Email
 shanewilmes@yahoo.com
 
 ## Usage
@@ -33,14 +35,18 @@ Clone the repo, navigate to the folder and run installation commands.
 - Day.js
 - Mongoose
 
-## Installation Commands
+## Installation 
 npm i, npm run start 
+
+## Screenshot
+![Image of App](./assets/images/noSQL%20image.png)
+
+## Demo
+
 
 ## Contributing
 Make a pull request with comments or questions.
 
-## Screenshot
-![Image of App](./assets/images/noSQL%20image.png)
 
 ## License
 ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
